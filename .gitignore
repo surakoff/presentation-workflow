@@ -1,0 +1,15 @@
+/projects/
+/output/
+/content/
+/assets/local/
+/fonts/
+/.venv/
+/.codex/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+node_modules/
+.DS_Store
+Thumbs.db
