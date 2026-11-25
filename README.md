@@ -27,7 +27,7 @@
 
 Стабильные версии и отдельный ZIP скилла публикуются в [GitHub Releases](https://github.com/surakoff/presentation-workflow/releases/latest). Подробности доступны в [истории изменений](.agents/skills/presentation-art-director/CHANGELOG.md).
 
-> Обнови `presentation-art-director` до последнего стабильного релиза из `surakoff/presentation-workflow` и кратко скажи, что изменилось с моей версии.
+> Обнови presentation-art-director.
 
 В браузерном Work, если чат не может установить новую копию, скачайте ZIP из релиза и загрузите его в **Plugins → Skills**. После загрузки проверьте номер версии. Изменения из GitHub в загруженную копию автоматически не попадают.
 
