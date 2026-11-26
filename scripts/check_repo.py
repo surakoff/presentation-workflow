@@ -14,6 +14,7 @@ REQUIRED = (
     "README.md", "AGENTS.md", "THIRD_PARTY.md", "templates/brief.md",
     "templates/pdf-block-review.tsv",
     ".agents/skills/presentation-art-director/SKILL.md",
+    ".agents/skills/presentation-art-director/scripts/audit-slide.js",
     ".agents/skills/presentation-art-director/references/figma-design.md",
     ".agents/skills/presentation-art-director/references/powerpoint.md",
     ".agents/skills/presentation-art-director/references/pdf-optimization.md",
@@ -66,6 +67,8 @@ def check_starter_contents() -> list[str]:
     # Inspect the distributed surface. Projects and exported files are local and ignored.
     for folder in (ROOT / "templates", OWN_SKILL):
         for file in folder.rglob("*"):
+            if file == OWN_SKILL / "scripts" / "audit-slide.js":
+                continue
             if file.is_file() and file.suffix not in {".md", ".tsv", ".yaml"}:
                 errors.append(f"Unexpected starter artifact: {file.relative_to(ROOT)}")
     return errors
